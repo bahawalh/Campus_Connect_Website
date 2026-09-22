@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusConnect — Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-title">Campus<span>Connect</span></div>
+      <div>University of Knowledge Portal</div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="services.html">Student Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>
+      University of Knowledge, 123 Campus Road, Knowledge City<br />
+      Phone: (000) 123-4567 &nbsp;|&nbsp; Email: info@campusconnect.edu
+    </p>
+
+    <h2>Student Enquiry Form</h2>
+    <p>Fill in the form below and we'll get back to you. (Client-side JavaScript validation — optional feature from Section 7.)</p>
+
+    <form class="enquiry-form" id="enquiry-form" novalidate>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" />
+
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="email" placeholder="you@example.com" />
+
+      <label for="topic">Enquiry Topic</label>
+      <select id="topic" name="topic">
+        <option>Admissions</option>
+        <option>Courses</option>
+        <option>Student Services</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Type your enquiry here..."></textarea>
+
+      <button type="submit">Submit Enquiry</button>
+
+      <p id="form-message"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    &copy; <span id="year"></span> CampusConnect — Web Development Lab Project
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
